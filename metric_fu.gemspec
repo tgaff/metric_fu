@@ -5,7 +5,7 @@ $:.unshift lib unless $:.include?(lib)
 Gem::Specification.new do |s|
   s.name        = "bf4-metric_fu"
   s.platform    = Gem::Platform::RUBY
-  s.version     = "2.1.3.2"
+  s.version     = "2.2.0.0"
   s.summary     = "A fistful of code metrics, with awesome templates and graphs"
   s.email       = "github@benjaminfleischer.com"
   s.homepage    = "http://github.com/bf4/metric_fu"
@@ -24,14 +24,14 @@ Gem::Specification.new do |s|
   s.test_files = Dir['spec/**/*.*']
 
   {
-    "flay"                  => ["= 1.2.1"],
-    "flog"                  => ["= 2.3.0"],
-    "reek"                  => ["= 1.2.12"],
-    "roodi"                 => ["= 2.1.0"],
-    "rails_best_practices"  => ["~> 0.6"],
-    "churn"                 => ["= 0.0.7"],
-    "chronic"               => ["= 0.2.3"], # required by churn
-    "main"                  => ["= 4.7.1"], # required by churn
+    "flay"                  => [">= 2.0.0"],
+    "flog"                  => [">= 3.0.0"],
+    "reek"                  => [">= 1.2.13"],
+    "roodi"                 => [">= 2.1.0"],
+    "rails_best_practices"  => [">= 1.12.0"],
+    "churn"                 => [">= 0.0.24"],
+#    "chronic"               => ["= 0.2.3"], # required by churn
+#    "main"                  => ["= 4.7.1"], # required by churn
     "activesupport"         => [">= 2.0.0"], # ok
     # "syntax"                => ["= 1.0.0"],
     "coderay"               => [],
